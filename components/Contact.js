@@ -94,7 +94,7 @@ export default function Contacter() {
       formData.append("motivation", motivation);
       formData.append("resume", resume);
  
-      const { data } = await axios.post("/api/postuleroffre", formData, {
+      const { data } = await axios.post("/api/contact", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
